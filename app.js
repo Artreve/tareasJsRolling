@@ -92,7 +92,7 @@ Tip: se recomienda el uso de for of*/
 // let numeros = [1,2,3,4,5];
 // let pares = [];
 // let impar = [];
-// let numeroAleatorio = Math.ceil(Math.random()*10+1);
+// let numeroAleatorio = Math.ceil(Math.random()*10);
 // let productoDeNumeros = numeros.map(function(num){
 //     return num * numeroAleatorio;
 // })
@@ -106,7 +106,7 @@ Tip: se recomienda el uso de for of*/
 // }
 // console.log(`Pares: ${pares}; Impares ${impar}`);
 
-/*6) Tomar una lista de lenguajes de programación y mostrar en consola una lista ordenada con los nombres ordenados alfabéticamente y en mayúsculas sin mutar el arreglo original.
+/*6) Tomar una lista de lenguajes de programación y mostrar en consola una lista ordenada con los nombres ordenados alfabéticamente y en mayúsculas sin mutar el arreglo original. mutuar: NO MODIFICAR EL CONTENIDO ORIGINAL DEL ARRAY
 
 let lenguajes = ["javascript", "python", "c++", "c#", "java", ".net"];
 
@@ -120,5 +120,20 @@ function ordenarLenguajes() {
 }
 */
 let lenguajes = ["javascript", "python", "c++", "c#", "java", ".net"];
+function ordenarLenguajes() {
+    //definir un nuevo arreglo
+    //ordenarlos por orden alfabético
+    //en mayusculas
+    // en una lista ordenada
+    //1-javascript
+    //2-java
+    //lenguajesOrdenados = lenguajes; //Si hago esto, vamos a decirle a la consola que ocupe el mismo lugar de la memoria, porque lo que las modificaciones que realicemos a una, se copiara otra
+    let lenguajesOrdenados = lenguajes.slice(0);
+
+    lenguajesOrdenados.sort().map(function(lenguaje,index){
+        console.log(`${index+1} - ${lenguaje.toUpperCase()}`)
+    })
+
+    }
 
 
