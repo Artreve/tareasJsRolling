@@ -1,22 +1,21 @@
- class Producto{
-     constructor(codigo, nombre, precio){
-        this.codigo = codigo,
-        this.nombre = nombre,
-        this.precio = precio
-     }
-     imprimeDatos(){
-         document.write(`<b>Código</b>:${this.codigo}<br/>`);
-         document.write(`<b>Nombre</b>:${this.nombre}<br/>`);
-         document.write(`<b>Precio</b>:${this.precio}<br/>`);
-         document.write(`<b>-------------------------------</b><br/>`)
-    }
- }
- 
- let producto1 = new Producto('1','Yogurt','$10');
- let producto2 = new Producto('2','Mermelada','$50');
- let producto3 = new Producto('3','Atún','$100');
+const mostrarFecha = function(){
+   setTimeout(function() {
+      fecha = new Date();
+      console.log(fecha);
+      document.write(fecha);
+   }, 3000);
+}
+mostrarFecha();
 
- let productos = [producto1,producto2,producto3];
- productos.forEach(function(producto){
-    producto.imprimeDatos();
-});
+function iniciarRecorrido(){
+   calorias=0
+   contador=0;
+   cronometro = setInterval(function(){
+      calorias=calorias+0.15;
+      contador++;
+      console.log(`Estás quemando: ${Math.round(calorias)} calorias en ${contador} segundos`)
+   },1000);
+}
+const detenerRecorrido = function(){
+   clearInterval(cronometro);
+}
