@@ -1,0 +1,48 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background:url(../assets/angel.jpg) no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    color: #fff;
+    font-size: 16px;
+}
+.contenedor{
+    width: 90%;
+}
+.row{
+    width: 40%;
+    margin: 32px;
+}
+ .row p{
+     display: inline-block;
+
+ }
+ #fecha{
+     font-family: Oswald, Arial;
+     text-align: center;
+     font-size: 24px;
+     margin-bottom: 5px;
+     background-color: rgba(0, 0, 0, .5);
+     padding: 20px;
+     width: 100%;
+ }
+ #hora{
+    font-family: Oswald, Arial;
+    text-align: center;
+    font-size: 64px;
+    background-color: rgba(0, 0, 0, .5);
+    padding: 20px;
+    width: 100%;
+ }
+ .segundos{
+     display: inline-block;
+ }
+ .segundos p{
+     display: block;
+     font-size: 32px;
+ }
